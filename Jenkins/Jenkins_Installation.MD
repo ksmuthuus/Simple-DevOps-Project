@@ -32,7 +32,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    export JAVA_HOME
    PATH=$PATH:$JAVA_HOME
     # To set it permanently update your .bash_profile
-   vi ~/.bash_profile
+   vi ~/.bash_profile (or) cd ~ and then vi .bash_profile
    ```
    _The output should be something like this,_
     ```sh
@@ -59,6 +59,9 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 
    # Setup Jenkins to start at boot,
    chkconfig jenkins on
+   
+   # Check Jenkins Status
+   service jenkins status
    ```
 
    ### Accessing Jenkins
@@ -70,6 +73,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 - The default Username is `admin`
 - Grab the default password 
 - Password Location:`/var/lib/jenkins/secrets/initialAdminPassword`
+- cat /var/lib/jenkins/secrets/initialAdminPassword
 - `Skip` Plugin Installation; _We can do it later_
 - Change admin password
    - `Admin` > `Configure` > `Password`
