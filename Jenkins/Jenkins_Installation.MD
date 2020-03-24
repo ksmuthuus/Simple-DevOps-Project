@@ -8,6 +8,15 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    - Security Group with Port `8080` open for internet
 1. Java v1.8.x 
 
+## Switch root user
+1. sudo su
+
+## Check Java version
+1. java -version
+
+## Remove old Java version
+1. yum remove java-1.7.*
+
 ## Install Java
 1. We will be using open java for our demo, Get the latest version from http://openjdk.java.net/install/
    ```sh
